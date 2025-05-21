@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"id": "playerfixer",
+	"version": "1.3",
+	"name": "PlayerFixer",
+	"description": "Combat and movement assist utilities.",
+	"authors": ["YourName"],
+	"contact": {},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["com.playerfixer.PlayerFixerMod"],
+		"client": ["com.playerfixer.PlayerFixerMod"]
+	},
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"fabric": "*",
+		"minecraft": "1.21.5",
+		"cloth-config": "*",
+		"modmenu": "*"
+	}
+}
