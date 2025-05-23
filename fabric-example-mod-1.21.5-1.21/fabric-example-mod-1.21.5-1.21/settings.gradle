@@ -1,3 +1,5 @@
+rootProject.name = 'shieldmacemod'
+
 pluginManagement {
 	repositories {
 		maven {
