@@ -1,4 +1,4 @@
-rootProject.name = 'shieldmacemod'
+rootProject.name = 'playerfixer'
 
 pluginManagement {
 	repositories {
