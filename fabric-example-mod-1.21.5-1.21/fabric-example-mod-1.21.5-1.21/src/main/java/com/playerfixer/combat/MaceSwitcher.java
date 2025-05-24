@@ -23,6 +23,8 @@ public class MaceSwitcher {
 
             boolean isFalling = client.player.fallDistance > 2.0F;
             boolean usingElytra = client.player.isFallFlying();
+            boolean useDensity = FallAnalyzer.useDensityMace();
+            ItemStack bestMace = HotbarUtils.findBestMace(useDensity);
 
             ItemStack bestMace = HotbarUtils.findBestMace(isFalling || usingElytra);
             if (bestMace != null) {
