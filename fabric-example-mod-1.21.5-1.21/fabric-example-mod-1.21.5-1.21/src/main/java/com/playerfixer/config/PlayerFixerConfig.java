@@ -16,6 +16,7 @@ public class PlayerFixerConfig {
     public static boolean globalPause = false;
     public static boolean shieldBreaker = true;
     public static boolean maceAfterShield = true;
+    public static boolean autoShield = true;
 
     public static Set<String> noAttackPlayers = new HashSet<>();
 
