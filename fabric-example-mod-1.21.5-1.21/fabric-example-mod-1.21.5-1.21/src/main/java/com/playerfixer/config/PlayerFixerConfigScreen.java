@@ -60,6 +60,11 @@ public class PlayerFixerConfigScreen {
                 .setTooltip(Text.of("How fast the auto-aim adjusts (1.0 = instant, 0.1 = slow tracking)"))
                 .setSaveConsumer(newValue -> PlayerFixerConfig.aimSpeed = newValue)
                 .build());
+        general.addEntry(builder.entryBuilder()
+    .startBooleanToggle(Text.of("Auto Shield Block"), PlayerFixerConfig.autoShield)
+    .setDefaultValue(true)
+    .setSaveConsumer(newValue -> PlayerFixerConfig.autoShield = newValue)
+    .build());
 
 
         builder.setSavingRunnable(() -> {
