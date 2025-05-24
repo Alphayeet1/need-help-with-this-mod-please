@@ -9,6 +9,11 @@ import com.playerfixer.combat.ShieldBreakHandler;
 import com.playerfixer.combat.AutoAimHandler;
 import com.playerfixer.combat.RightClickHandler;
 import com.playerfixer.combat.AutoShieldHandler;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+
+ClientTickEvents.END_CLIENT_TICK.register(client -> {
+    HotbarSnapshot.autoOrganizeIfMaceDetected();
+});
 
 public class PlayerFixerMod implements ClientModInitializer {
     public static final String MOD_ID = "playerfixer";
