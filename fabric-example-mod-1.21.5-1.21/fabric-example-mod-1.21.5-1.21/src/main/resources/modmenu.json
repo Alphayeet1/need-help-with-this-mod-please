@@ -3,7 +3,8 @@
   "modmenu:mods": [
     {
       "modId": "playerfixer",
-      "configScreenFactory": "com.playerfixer.config.PlayerFixerConfigScreen::create"
+      "configScreenFactory":
+"com.playerfixer.config.PlayerFixerConfigScreen::create"
     }
   ]
 }
