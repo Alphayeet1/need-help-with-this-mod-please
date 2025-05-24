@@ -13,7 +13,7 @@ public class PlayerFixerMod implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        System.out.println("[PlayerFixer] Initializing..."); // debug line
+        System.out.println("[PlayerFixer] Mod is active!"); // debug line
         PlayerFixerConfig.init();
         MaceSwitcher.register();
         AutoAimHandler.register();
