@@ -57,5 +57,7 @@ public class AutoShieldHandler {
             if (stack.getItem() == Items.SHIELD) return i;
         }
         return -1;
+
+               if (!PlayerFixerConfig.autoShield) return;
     }
 }
