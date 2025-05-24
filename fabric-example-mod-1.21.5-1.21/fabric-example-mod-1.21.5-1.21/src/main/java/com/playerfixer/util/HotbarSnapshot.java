@@ -1,3 +1,4 @@
+private static boolean autoOrganized = false;
 package com.playerfixer.util;
 
 import net.minecraft.client.MinecraftClient;
