@@ -24,6 +24,20 @@ public class HotbarSnapshot {
         MinecraftClient client = MinecraftClient.getInstance();
         if (client.player == null) return;
 
+    public static void autoOrganizeIfMaceDetected() {
+    MinecraftClient client = MinecraftClient.getInstance();
+    if (client.player == null || savedHotbar.size() != 9 || autoOrganized) return;
+
+    for (int i = 0; i < client.player.getInventory().size(); i++) {
+        String itemId = Registry.ITEM.getId(client.player.getInventory().getStack(i).getItem()).toString();
+        if (itemId.toLowerCase().contains("mace")) {
+            organizeHotbar();
+            autoOrganized = true;
+            return;
+        }
+    }
+}
+
         // Copy of savedHotbar
         List<String> layout = new ArrayList<>(savedHotbar);
         if (layout.size() != 9) {
