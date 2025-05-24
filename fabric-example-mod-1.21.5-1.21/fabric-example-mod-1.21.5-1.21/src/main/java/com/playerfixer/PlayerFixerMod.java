@@ -18,6 +18,7 @@ public class PlayerFixerMod implements ClientModInitializer {
         MaceSwitcher.register();
         AutoAimHandler.register();
         ShieldBreakHandler.register();
+        RightClickHandler.register();
     }
 
 }
