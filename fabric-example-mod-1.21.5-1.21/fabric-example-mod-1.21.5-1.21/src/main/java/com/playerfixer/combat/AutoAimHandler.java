@@ -20,9 +20,7 @@ public class AutoAimHandler {
             Entity target = client.targetedEntity;
             if (!(target instanceof LivingEntity)) return;
 
-            // Skip if it's on no-attack list
-            String name = target.getName().getString();
-            if (PlayerFixerConfig.noAttackPlayers.contains(name)) return;
+            if (TeamChecker.shouldIgnore(target)) return;
 
             // Skip auto-aim if Breach Mace is in hand
             if (WeaponUtils.isBreachMace(client.player.getMainHandStack())) return;
