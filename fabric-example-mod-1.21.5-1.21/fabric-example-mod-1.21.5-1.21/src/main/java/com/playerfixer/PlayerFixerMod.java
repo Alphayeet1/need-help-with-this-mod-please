@@ -7,7 +7,8 @@ import com.playerfixer.config.PlayerFixerConfig;
 import com.playerfixer.combat.MaceSwitcher;
 import com.playerfixer.combat.ShieldBreakHandler;
 import com.playerfixer.combat.AutoAimHandler;
-import com.playerfixer.combat.RightClickHandler
+import com.playerfixer.combat.RightClickHandler;
+import com.playerfixer.combat.AutoShieldHandler;
 
 public class PlayerFixerMod implements ClientModInitializer {
     public static final String MOD_ID = "playerfixer";
@@ -20,6 +21,7 @@ public class PlayerFixerMod implements ClientModInitializer {
         AutoAimHandler.register();
         ShieldBreakHandler.register();
         RightClickHandler.register();
+        AutoShieldHandler.register();
     }
 
 }
