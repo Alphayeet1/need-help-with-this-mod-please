@@ -67,6 +67,11 @@ public class PlayerFixerConfigScreen {
     .setSaveConsumer(newValue -> PlayerFixerConfig.autoShield = newValue)
     .build());
 
+        general.addEntry(builder.entryBuilder()
+    .startButton(Text.of("Reorganize Inventory to Saved Layout"), button -> {
+        HotbarSnapshot.organizeHotbar();
+    })
+    .build());
 
         builder.setSavingRunnable(() -> {
             // Save logic here if you're persisting settings
