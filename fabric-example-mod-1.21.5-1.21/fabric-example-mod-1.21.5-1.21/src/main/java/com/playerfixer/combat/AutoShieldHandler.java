@@ -58,6 +58,6 @@ public class AutoShieldHandler {
         }
         return -1;
 
-               if (!PlayerFixerConfig.autoShield) return;
+            if (!PlayerFixerConfig.autoShield) return;
     }
 }
